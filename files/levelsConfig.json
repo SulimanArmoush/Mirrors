@@ -1,0 +1,125 @@
+{
+
+  "levels": {
+
+    "Level1": {
+
+      "rows": 13,
+      "cols": 6,
+      "heuristic": 6,
+
+      "sourceDestination": "DOWN",
+      "sourceRow": 3,
+      "sourceCol": 0,
+
+      "rotateDestinations": [
+        [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+        [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+        [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+        [ "NONE", "NONE", "RotateCounterClockwise", "NONE", "RotateCounterClockwise", "NONE" ],
+        [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+        [ "RotateClockwise", "NONE", "RotateCounterClockwise", "NONE", "NONE", "NONE" ],
+        [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+        [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+        [ "NONE", "NONE", "NONE", "NONE", "RotateClockwise", "NONE" ],
+        [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+        [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+        [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+        [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ]
+      ],
+
+      "board": [
+        [ "Empty", "Empty", "Empty", "Empty", "Empty", "Empty" ],
+        [ "Empty", "Empty", "Empty", "Empty", "Empty", "Empty" ],
+        [ "Empty", "Empty", "Empty", "Empty", "Empty", "Empty" ],
+        [ "Source", "Obstacle", "RotatingMirror", "Empty", "RotatingMirror", "Empty" ],
+        [ "Empty", "Empty", "Empty", "Obstacle", "Empty", "Empty" ],
+        [ "RotatingMirror", "Empty", "FixedMirror", "Empty", "Empty", "Empty" ],
+        [ "Empty", "Empty", "Empty", "Empty", "Empty", "Empty" ],
+        [ "Empty", "Empty", "Empty", "Empty", "Empty", "Empty" ],
+        [ "Obstacle", "Empty", "Empty", "Empty", "TransitionalMirror", "Empty" ],
+        [ "Target", "Empty", "Empty", "Empty", "Empty", "Empty" ],
+        [ "Empty", "Empty", "Empty", "Empty", "Empty", "Empty" ],
+        [ "Empty", "Empty", "Empty", "Empty", "Empty", "Empty" ],
+        [ "Empty", "Empty", "Empty", "Empty", "Empty", "Empty" ]
+      ]
+    },
+
+
+  "Level2": {
+    "rows": 8,
+    "cols": 8,
+    "heuristic": 5,
+
+    "sourceDestination": "RIGHT",
+    "sourceRow": 4,
+    "sourceCol": 0,
+
+    "rotateDestinations": [
+      [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+      [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "RotateClockwise", "NONE" ],
+      [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+      [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+      [ "NONE", "NONE", "NONE", "RotateCounterClockwise", "NONE", "NONE", "NONE", "NONE" ],
+      [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+      [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "RotateCounterClockwise", "NONE" ],
+      [ "NONE", "NONE", "NONE", "RotateCounterClockwise", "NONE", "NONE", "NONE", "NONE" ]
+    ],
+
+    "board": [
+      [ "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Obstacle" ],
+      [ "Obstacle", "Target", "Empty", "Empty", "Empty", "Empty", "RotatingMirror", "Obstacle" ],
+      [ "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Empty", "Obstacle" ],
+      [ "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty" ],
+      [ "Source", "Empty", "Empty", "RotatingMirror", "Empty", "Empty", "Empty", "Empty" ],
+      [ "Obstacle", "Obstacle", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty" ],
+      [ "Obstacle", "Obstacle", "Empty", "Empty", "Empty", "Empty", "FixedMirror", "Empty" ],
+      [ "Obstacle", "Obstacle", "Obstacle", "TransitionalMirror", "Empty", "Empty", "Empty", "Obstacle" ]
+    ]
+  },
+
+
+  "Level3": {
+
+    "rows": 10,
+    "cols": 10,
+    "heuristic": 4,
+
+    "sourceDestination": "UP",
+    "sourceRow": 9,
+    "sourceCol": 8,
+
+    "rotateDestinations": [
+      [ "NONE", "NONE", "NONE", "NONE", "NONE", "RotateCounterClockwise", "NONE", "NONE", "NONE", "NONE" ],
+      [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+      [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "RotateClockwise", "NONE", "NONE" ],
+      [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+      [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+      [ "NONE", "NONE", "NONE", "RotateClockwise", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+      [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+      [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+      [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ],
+      [ "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE", "NONE" ]
+
+    ],
+
+    "board": [
+      [ "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Empty", "FixedMirror", "Obstacle", "Empty", "Empty" , "Obstacle" ],
+      [ "Obstacle", "Obstacle", "Obstacle", "Empty", "Empty", "Obstacle", "Empty", "Obstacle", "Obstacle", "Empty"  ],
+      [ "Obstacle", "Obstacle", "Empty", "Empty", "Empty", "Obstacle", "Empty", "RotatingMirror", "Empty" , "Empty" ],
+      [ "Obstacle", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty"  ],
+      [ "Obstacle", "Empty", "Obstacle", "Obstacle", "Empty", "Empty", "Empty", "Empty", "Empty", "Empty"  ],
+      [ "Target", "Obstacle", "Obstacle", "TransitionalMirror", "Empty", "Obstacle", "Obstacle", "Obstacle", "Obstacle" , "Obstacle" ],
+      [ "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Empty", "Empty", "Empty", "Empty", "Empty" , "Obstacle" ],
+      [ "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Empty", "Empty", "Empty" , "Obstacle" ],
+      [ "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Empty", "Empty" , "Obstacle" ],
+      [ "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Obstacle", "Source" , "Obstacle" ]
+    ]
+  }
+}
+
+}
+
+
+
+  
